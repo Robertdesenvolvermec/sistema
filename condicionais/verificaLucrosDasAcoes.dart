@@ -1,23 +1,25 @@
+import 'dart:html';
+
 void main() {
-  double diaDeCompra = 5.00;
-  double diaDeVenda = 6.00;
-  int quantidade = 1;
+  double diaDeCompra = 3.35;
+  double diaDeVenda = 4.23;
+  int quantidade = 50;
 
   double resultadoCompra = quantidade * diaDeCompra;
   double resultadoVenda = quantidade * diaDeVenda;
   double verificaResultado = resultadoVenda - resultadoCompra;
-
-  if(resultadoCompra > resultadoVenda){
-    
-    print('Valor da compra: $resultadoCompra');
-    print('Valor de venda: $resultadoVenda');
+  
+  if (resultadoCompra > resultadoVenda) {
     print('prejuizo');
     print(verificaResultado);
-  } else {
-
+    print('===================================');
     print('Valor da compra: $resultadoCompra');
     print('Valor de venda: $resultadoVenda');
+  } else {
     print('lucro');
     print(verificaResultado);
+    print('===================================');
+    print('Valor da compra: $resultadoCompra');
+    print('Valor de venda: $resultadoVenda');
   }
 }
